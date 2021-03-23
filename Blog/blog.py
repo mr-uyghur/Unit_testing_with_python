@@ -9,10 +9,10 @@ class Blog:
 
     def __repr__(self):
     #     representation of our blog
-        return '{} by {} ({} post{})'.format(self.title,
+        return '{} by {} ({} posts)'.format(self.title,
                                              self.author,
-                                             len(self.posts),
-                                             's' if len(self.posts) !=1 else '')
+                                             len(self.posts)
+                                             )
     def create_post(self, title, content):
         self.posts.append(Post(title, content))
 
